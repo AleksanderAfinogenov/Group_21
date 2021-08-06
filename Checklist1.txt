@@ -1,0 +1,14 @@
+Check 1
+Check 2
+Check 3
+
+etc
+
+1 point = 1 check
+
+Registration:
+passed/failed/skipped/no run
+
+Auth:
+passed/failed/skipped/no run
+
