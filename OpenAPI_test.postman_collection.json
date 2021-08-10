@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "91b085c1-1966-4a99-b72c-8ab996307030",
+		"name": "OpenAPI_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://petstore.swagger.io/v2/pet/findByStatus?status=sold",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/findByStatus?status=sold",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"findByStatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "sold"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet.",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet."
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/1",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/1",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://users.bugred.ru/tasks/rest/doregister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "bogunesan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "bogund",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "0505123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lab2.webtm.ru/php/users.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://lab2.webtm.ru/php/users.php",
+					"protocol": "http",
+					"host": [
+						"lab2",
+						"webtm",
+						"ru"
+					],
+					"path": [
+						"php",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lab2.webtm.ru/php/users.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Authorization -\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].role).to.eql(\"0\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://lab2.webtm.ru/php/users.php",
+					"protocol": "http",
+					"host": [
+						"lab2",
+						"webtm",
+						"ru"
+					],
+					"path": [
+						"php",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lab2.webtm.ru/php/users.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Authorization +\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].role).to.eql(\"0\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"getRole\",\"user\":{\"email\":\"w@w.w\",\"password\":\"f1290186a5d0b1ceab27f4e77c0c5d68\"}}"
+				},
+				"url": {
+					"raw": "http://lab2.webtm.ru/php/users.php",
+					"protocol": "http",
+					"host": [
+						"lab2",
+						"webtm",
+						"ru"
+					],
+					"path": [
+						"php",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lab2.webtm.ru/php/users.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Authorization +\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].role).to.eql(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"getRole\",\"user\":{\"email\":\"w@w.w\",\"password\":\"f1290186a5d0b1ceab27f4e77c0c5d68\"}}"
+				},
+				"url": {
+					"raw": "http://lab2.webtm.ru/php/users.php",
+					"protocol": "http",
+					"host": [
+						"lab2",
+						"webtm",
+						"ru"
+					],
+					"path": [
+						"php",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lab2.webtm.ru/php/users.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Authorization +\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.value).to.eql(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"getRole\",\"user\":{\"email\":\"w@w.w\",\"password\":\"f1290186a5d0b1ceab27f4e77c0c5d68\"}}"
+				},
+				"url": {
+					"raw": "http://lab2.webtm.ru/php/users.php",
+					"protocol": "http",
+					"host": [
+						"lab2",
+						"webtm",
+						"ru"
+					],
+					"path": [
+						"php",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lab2.webtm.ru/php/users.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Authorization +\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.value).to.eql(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"getRole\",\"user\":{\"email\":\"w@w.w\",\"password\":\"f1290186a5d0b1ceab27f4e77c0c5d68\"}}"
+				},
+				"url": {
+					"raw": "http://lab2.webtm.ru/php/users.php",
+					"protocol": "http",
+					"host": [
+						"lab2",
+						"webtm",
+						"ru"
+					],
+					"path": [
+						"php",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?http://lab2.webtm.ru/php/terms.php={\"method\":\"setterms\",\"jsonArray\":{\"birthday\":{},\"fam\":\"XCVBXCVB\",\"name\":\"XCVBXCVB\",\"hour\":\"13\",\"minute\":\"30\",\"date\":\"2021-04-28\"}}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "?http://lab2.webtm.ru/php/terms.php={\"method\":\"setterms\",\"jsonArray\":{\"birthday\":{},\"fam\":\"XCVBXCVB\",\"name\":\"XCVBXCVB\",\"hour\":\"13\",\"minute\":\"30\",\"date\":\"2021-04-28\"}}",
+					"query": [
+						{
+							"key": "http://lab2.webtm.ru/php/terms.php",
+							"value": "{\"method\":\"setterms\",\"jsonArray\":{\"birthday\":{},\"fam\":\"XCVBXCVB\",\"name\":\"XCVBXCVB\",\"hour\":\"13\",\"minute\":\"30\",\"date\":\"2021-04-28\"}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/booking/15?cookie=token=a0ee586bdbfdfb9",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/15?cookie=token=a0ee586bdbfdfb9",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"15"
+					],
+					"query": [
+						{
+							"key": "cookie",
+							"value": "token=a0ee586bdbfdfb9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/auth",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
